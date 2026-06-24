@@ -65,5 +65,3 @@ PI, Roselyne Tchoua: rtchoua@depaul.edu
 ## A note on data and credentials
 
 The underlying patient level CHW and SDoH dataset is not included in this repository, since it contains sensitive health information. The notebooks here are shared to document the analysis approach.
-
-Before pushing this repository publicly, remove the hardcoded Hugging Face access token currently in `SyntheticDataCreate.ipynb` (the `login(token="hf_...")` call) and revoke that token from your Hugging Face account settings. If the notebook has already been committed anywhere with that token in it, treat the token as compromised and generate a new one, since old commits can still expose it even after you edit the file. Going forward, read tokens from an environment variable or a local `.env` file that is listed in `.gitignore` instead of pasting them into notebook cells.
